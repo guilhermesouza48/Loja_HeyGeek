@@ -84,3 +84,31 @@ footer {
 #redes {
     display: auto;
 }
+
+/* BARRA PESQUISA */
+.pesquisa{
+    margin-left: 10px;
+}
+.pesquisa{
+    border: 1px solid white;
+    height: 35px;
+    width: 20px;
+    margin: 30px 15px;
+}
+#barra{
+    height: 25px;
+    width: 250px;
+    margin: 5px;
+    color: white;
+    border-style: none;
+    background-color: darkblue;
+    justify-content: center;
+}
+#barra::placeholder{
+    padding-left: 10px;
+    color: white;
+}
+.pesquisa i{
+    color: white;
+    font-size: 15px;
+}
