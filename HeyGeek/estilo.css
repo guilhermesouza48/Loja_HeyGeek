@@ -1,0 +1,554 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bungee&family=Rajdhani:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Suez+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+  :root {
+    --cor-primaria: #282A36;
+    --cor-fundo-clara: #5c5b5b;
+    --cor-texto-claro: #FFFFFF;
+    --cor-texto-escuro: rgb(0, 0, 0);
+    --cor-menu: #3d3d3d;
+}
+  * {
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+html{
+    font-size: 16px;
+}
+body{
+    background-color:  rgb(32, 32, 32);
+}
+
+#Principal {
+    background-color: var(--cor-fundo-clara); 
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+header {
+    background-color: var(--cor-primaria);
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+}
+
+a {
+    color: var(--cor-texto-escuro);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+p a:visited {
+    color: #9966CC;
+}
+
+p a{
+    color: rgb(79, 79, 255);
+}
+
+p a:hover  {
+    filter: brightness(170%);
+    text-decoration: underline;
+}
+
+/*NAV'S*/
+
+nav ul li {
+    display: inline-block;
+    margin: 10px;
+}
+nav {
+    background-color: var(--cor-secundaria);      
+}
+nav img{
+    width: 40px;
+}
+
+nav ul{
+    text-align: center;
+    align-items: center;
+}
+
+#menu {
+    padding: 0 20px;
+}
+
+#menu li {
+    margin: 10px 0;
+}
+
+#menu-contraido {
+    position: relative;
+}
+
+#menu-contraido input, #menu-contraido span {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+#menu-contraido input {
+    z-index: 100; 
+    opacity: 0; 
+    display: none; 
+}
+
+#menu-contraido span {
+    display: block;
+    background-color: var(--cor-primaria);
+    border-radius: 4px;
+    border: 2px solid #FFFFFF;
+    background-image: url('img/menu-icon-48x48.png');
+    background-size: 40px 40px;
+    background-position: center center;
+    cursor: pointer; 
+    display: none; 
+}
+
+#menu-contraido input:checked ~ span {
+    background-image: url('img/close-icon-48x48.png');
+}
+/*REDES SOCIAIS*/
+
+#Rede-Social a {
+    color: #FFFFFF;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+#Rede-Social a span {
+    margin-left: 6px;
+    display: none;
+}
+#Rede-Social a:hover span {
+    display: inline;
+}
+#Rede-Social {
+    display: auto;
+}
+
+/*MENU*/
+.menu{
+    font-family: Bungee, Calibri, Arial;
+}
+.menu li{
+    margin: 5px;
+}
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+    background-color: #110000;
+}
+.menu ul li {
+    display: inline;
+    position: relative;
+}
+.menu a{
+    color: rgb(0, 174, 255);
+    text-decoration: none;
+    display: inline-block;
+    padding: 9px 30px;
+    transition: 0.6s;
+    height: 100%;
+}
+.menu ul li a:hover {
+    background-color: var(--cor-menu);
+    padding: 9px 50px;
+}
+.menu ul li ul li a:hover{
+    padding: 9px;
+}
+.menu ul li ul li{
+    margin: 0;
+}
+.menu ul ul {
+    display: none;
+    left: 0;
+    position: absolute;
+}
+.menu ul li:hover ul {
+    display: block;
+}
+.menu ul li a:hover ul {
+    display: inline-block;
+}
+.menu ul ul {
+    width: 100%;
+}
+.menu ul ul li a {
+    display: block;
+}
+
+ul{
+    margin-block-end: 1em;
+}
+
+img {
+    border-radius: 10px;
+}
+/*FOOTERS*/
+
+footer {
+    color: rgb(0, 174, 255);
+    background-color: var(--cor-primaria);
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+footer a{
+    color: rgb(0, 174, 255)
+}
+footer img{
+    width:10%;                              
+}
+footer ul li {
+    display: inline-block;
+    padding: 0 12px;
+    border-right: 3px solid #000000;
+}
+footer ul li:last-child {
+    border-right: none;
+}
+
+/*MAiN*/
+
+main, aside {
+    background-color: var(--cor-menu);
+    padding: 24px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.25);
+    flex-grow: 1;
+    max-width: 100%;
+}
+
+main {
+    width: 75%;
+}
+
+main > article > h2{ 
+    text-transform: uppercase;
+    color: rgb(0, 174, 255);
+}
+
+/*ASIDE*/
+
+aside {
+    margin-left: 20px;
+    background-color: var(--cor-primaria);
+    width: 25%;
+}
+
+aside p{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+aside > article > a > img {
+    display: block;
+    margin: auto;
+    border-radius: 30px;
+    max-width: 100%;
+    padding: 10px 0;
+}
+
+aside > article > h1 > a {
+    font-size: 1rem;
+    color: #000000;
+}
+aside > article > P {
+    font-size: 1rem;
+    color: #D3D3D3;
+}
+
+aside > article > h1 {
+    margin-top: 6px;
+}
+
+aside h1{
+    font-family: Bungee, Arial, Calibri;
+}
+
+/*NOTICIAS*/
+
+#texto{
+    font-family: Bungee, Calibri, Arial;
+}
+
+/*GTA V*/
+
+.GTA{
+    background-color: var(--cor-primaria);
+    border-radius: 10px;
+    padding: 24px;
+    font-size: 1rem;
+    color: #D3D3D3;
+}
+
+.GTA img{
+    width: 65%;
+    display: flex;
+    margin: auto;
+}
+
+.GTA  h1  a{
+    font-family: 'Suez one', arial ;
+    font-size: 28px;
+
+}
+
+.GTA p {
+    margin-top: 20px;
+    font-size: 1.3rem;  
+}
+
+/*Red Dead Redemption 2*/
+
+.RedDead{
+    padding-top: 40px;
+}
+
+.RedDead img{
+    width: 40%;
+}
+
+.RedDead h1 a{
+    font-family: 'Suez one', Arial ;
+    font-size: 28px;
+}
+.RedDead p b{
+    margin-top: 10px;
+    font-size: 1.3rem;
+}
+
+/*Hollow Knight: SilkSong*/
+ 
+.Hollow{
+        padding-top: 40px;
+}
+
+.Hollow img{
+    width: 40%;
+}
+
+.Hollow h1 a{
+    font-family: 'Suez one', Arial ;
+    font-size: 28px;
+}
+.Hollow p b{
+    margin-top: 10px;
+    font-size: 1.3rem;
+}
+
+/*MINECRAFT DUNGEONS*/
+
+.Minecraft-DG{
+        padding-top: 40px;
+}
+
+.Minecraft-DG img{
+    width: 40%;
+}
+
+.Minecraft-DG a h1{
+    font-family: 'Suez one', Arial ;
+    font-size: 28px;
+}
+.Minecraft-DG p b{
+    margin-top: 10px;
+    font-size: 1.3rem;
+}
+
+@media screen and (max-width: 1020px) {
+   
+    main {
+        width: 70%;
+    }
+    
+    aside {
+        width: 30%;
+    }
+    
+    .foto {
+        flex-direction: column; 
+    }
+    
+    .Principal img {
+        margin-right: 0;
+        margin-bottom: 24px;
+    }
+    
+    .GTA img{
+        width: 100%; 
+    }
+
+    .RedDead img{
+        width: 100%;
+    }
+
+    .Hollow img{
+        width: 100%;
+    }
+
+    .Minecraft-DG img{
+        width: 100%;
+    }
+
+    #Corujão {
+        visibility: hidden;
+     }
+}
+
+@media screen and (max-width: 800px) {
+     
+    #menu {
+        min-height: 88px;
+    }
+    
+    #menu ul {
+        margin-top: 50px;
+    }
+   
+    #menu ul li {  
+        display: block;
+        margin: 0;
+    }
+    
+    #menu a {
+        width: 100%;
+        display: block;
+    }
+    
+    #menu-contraido {
+        margin-top: 45px;
+        width: 100%;
+    }
+    
+    #menu-contraido ul {
+        display: none;
+    }
+   
+    #menu-contraido input, #menu-contraido span {
+        display: block;
+        left: 20px;
+        top: -42px;
+    }
+    
+    #menu-contraido input:checked ~ ul {
+        display: block;
+    }
+
+    #Principal {
+        flex-direction: column; 
+    }
+    
+    main {
+        width: 100%;
+    }
+    
+    aside {
+        margin-left: 0;
+        width: 100%;
+    }
+    
+    aside > article > h1 {
+        text-align: center;
+    }
+    
+    footer {
+        flex-direction: column;
+    }
+    
+    footer > * {    
+        margin-bottom: 12px;
+    }
+    
+    footer ul li:first-child {
+        padding-left: 0;
+    }
+    
+    footer address {
+        text-align: right;
+    }
+    
+    .GTA img{
+        width: 100%; 
+    }
+
+    .RedDead img{
+        width: 100%;
+    }
+
+    .Hollow img{
+        width: 100%;
+    }
+
+    .Minecraft-DG img{
+        width: 100%;
+    }
+
+    #Corujão {
+        visibility: hidden;
+     }
+}
+
+@media screen and (max-width: 640px) {
+    header{
+        flex-direction: column;
+        align-items: center;
+    } 
+    
+    header img{
+        max-width: 100% ;
+    }
+
+    .GTA img{
+        width: 100%; 
+    }
+
+    .RedDead img{
+        width: 100%;
+    }
+
+    .Hollow img{
+        width: 100%;
+    }
+
+    .Minecraft-DG img{
+        width: 100%;
+    }
+
+    main {
+        width: 100%;
+    }
+    
+    aside {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    #Corujão {
+        visibility: hidden;
+     }
+
+}
+
+
+  
+@keyframes deslizar{
+    from{ margin-right:0; opacity: 0; }
+    50%{ margin-right:20px; transform: rotate(0deg); opacity: 0.5;}
+    75%{ margin-right:20px; transform: rotate(0deg); opacity: 1;}
+    100%{ margin-right:20px; transform: rotate(0deg); opacity: 5;}
+}
