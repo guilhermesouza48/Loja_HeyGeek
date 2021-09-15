@@ -36,7 +36,7 @@ body{
 header {
     background-color: var(--escuro);
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     flex-direction: row;
     align-items: center;
 }
@@ -145,7 +145,19 @@ nav ul{
 #menu-contraido input:checked ~ span {
     background-image: url('img/close-icon-48x48.png');
 }
-/*REDES SOCIAIS*/
+/*Rodape*/
+#logo {
+    width: 15%;
+    height: 15%;
+}
+#logo-r {
+    width: 10%;
+    height: 10%;
+}
+#local {
+    width: 25%;
+    height: 25%;
+}
 
 #Rede-Social a {
     color: #FFFFFF;
@@ -162,6 +174,34 @@ nav ul{
 }
 #Rede-Social {
     display: auto;
+}
+
+footer {
+    color: var(--verdim);
+    background-color: var(--cor-primaria);
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer a{
+    color: var(--verdim);
+} 
+footer #fotoC1{
+    width:10%;                              
+} 
+footer ul li {
+    display: inline-block;
+    padding: 0 10px;
+    border-right: 3px solid var(--cinza);
+}
+footer ul li:last-child {
+    border-right: none;
+}
+footer #local {
+    width: 6%;
+    height: 6%;
 }
 
 /*MENU*/
@@ -262,34 +302,6 @@ img {
     border: var(--cinza) solid 2px;
 }
 
-/*FOOTERS*/
-
-footer {
-    color: var(--verdim);
-    background-color: var(--cor-primaria);
-    padding: 20px;
-    display: flex;
-    justify-content: space-evenly;
-}
-
-footer a{
-    color: var(--verdim);
-} 
-footer #fotoC1{
-    width:10%;                              
-} 
-footer ul li {
-    display: inline-block;
-    padding: 0 12px;
-    border-right: 3px solid var(--cinza);
-}
-footer ul li:last-child {
-    border-right: none;
-}
-footer #local {
-    width: 6%;
-    height: 6%;
-}
 
 /*MAiN*/
 
@@ -370,11 +382,12 @@ article p {
 
 /*address*/
 address {
-    font-size: 12px;
+    font-size: 16px;
+    margin-right: 20%;
 }
 
 address a{
-    font-size: 12px;
+    font-size: 16px;
 }
 
 

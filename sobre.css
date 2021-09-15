@@ -158,6 +158,10 @@ nav ul{
 #Rede-Social {
     display: auto;
 }
+#Rede-Social {
+    display: auto;
+    margin-left: 40%;
+}
 
 /*MENU*/
 .menu{

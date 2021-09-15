@@ -14,9 +14,9 @@
 </head>
 <body>
     <header> 
-        <a href="/site.html">
-            <img id="logo" src="Img/LOGO01.svg" alt="#" title="#">
-        </a>
+        
+        <img id="logo" src="Img/LOGO01.svg" alt="#" title="#">
+        
         <div class="area-de-pesquisa">
             <form class="pesquisa">
 
@@ -53,10 +53,10 @@
     <div id="Principal">
         <main> 
 
-            <article class="#">
-                
-                
+            <article class="contato"> 
+
                 <div id="main-container">
+                    
                     <h1>VIRE UM GEEK AGORA!</h1>
                     <form id="register-form" action="">
                       <div class="full-box">
@@ -65,13 +65,13 @@
                           data-email-validate>
                       </div>
                       <div class="half-box spacing">
-                        <label for="name">Nome</label>
+                        <label for="name">Nome Completo</label>
                         <input type="text" name="name" id="name" placeholder="Digite seu nome" data-required data-min-length="3"
                           data-max-length="16">
                       </div>
                       <div class="half-box">
-                        <label for="lastname">Sobrenome</label>
-                        <input type="text" name="lastname" id="lastname" placeholder="Digite seu sobrenome" data-required
+                        <label for="lastname">Sexo</label>
+                        <input type="text" name="lastname" id="lastname" placeholder="Masc/Femin" data-required
                           data-only-letters>
                       </div>
                       <div class="half-box spacing">
@@ -83,6 +83,21 @@
                         <label for="passconfirmation">Conf.Senha</label>
                         <input type="password" name="passconfirmation" id="passwordconfirmation"
                           placeholder="Digite novamente sua senha" data-equal="password">
+                      </div>
+                      <div class="half-box spacing">
+                        <label for="lastname">Cidade</label>
+                        <input type="text" name="city" id="city" placeholder="Digite nome da sua cidade" data-password-validate
+                          data-required>
+                      </div>
+                      <div class="half-box box">
+                        <label for="lastname">Estado</label>
+                        <input type="text" name="estado" id="estado" placeholder="Digite seu estado" data-required
+                          data-only-letters>
+                      </div>
+                      <div class="half-box">
+                        <label for="lastname">CPF e RG</label>
+                        <input type="text" name="cpf" id="cpf" placeholder="Digite seu CPF - RG" data-password-validate
+                          data-required>
                       </div>
                       <div class="full-box">
                         <input id="btn-submit" type="submit" value="Registrar">
@@ -98,48 +113,47 @@
     
     <footer id="texto">
         
-        <img src="Img/local.png" alt="localizacao"  id="local">
         
-        <address>
-            Rua Vinewood Boulevard   <br>
-            Avenida Hollywood Boulevard  <br>
-            <a href="">0800 159 357 0</a><br>
-        </address>
-           
-
-        <img src="img/" alt="" title="" id="">
-
-        <nav id="Rede-Social">
-            <ul>
-                <li>
-                    <a href="#">
-                        <img src="Img/WhatsApp.png" alt="WhatsApp">
-                        <span>(16)99001-3364</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="Img/Facebook.png" alt="Facebook">
-                        <span>HeyGeek</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="Img/Instagram.png" alt="Instagram">
-                        <span>HeyGeek</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="Img/Twitch.png" alt="Patrocinador">
-                        <span>https://www.twitch.tv/leohraiz</span>
-                    </a>
-                </li>
-            </ul>
-        </nav>
-        
+            <img src="Img/local.png" alt="localizacao"  id="local">
+            <address>
+                Rua Vinewood Boulevard   <br>
+                Avenida Hollywood Boulevard  <br>
+                <a href="">0800 159 357 0</a><br>
+            </address>
         
 
+            <img id="logo-r" src="Img/LOGO01.svg" alt="#" title="#">
+
+            <nav id="Rede-Social">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="Img/WhatsApp.png" alt="WhatsApp">
+                            <span>(16)99001-3364</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="Img/Facebook.png" alt="Facebook">
+                            <span>HeyGeek</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="Img/Instagram.png" alt="Instagram">
+                            <span>HeyGeek</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="Img/Twitch.png" alt="Patrocinador">
+                            <span>https://www.twitch.tv/leohraiz</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        
+        
     </footer>
     
 
