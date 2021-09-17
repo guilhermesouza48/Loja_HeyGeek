@@ -174,7 +174,6 @@ nav ul{
 footer {
     color: var(--verdim);
     background-color: var(--cor-primaria);
-    padding: 30px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -296,11 +295,11 @@ img {
 main, aside {
     background-color: var(--cinza);
     padding: 24px;
-    margin-bottom: 20px;
     border-radius: 10px;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.25);
     max-width: 180vh;
     max-height: 70%;
+    margin-left: 10px;
 }
 
 main {
@@ -357,7 +356,7 @@ aside h1{
 
 article img{
     border: solid 1px var(--verdim);
-    margin-left: 35%;
+    margin-left:5%;
     width: 30%;
     height: 30%;
 }
@@ -369,9 +368,9 @@ article p {
 
 article h1 {
     color: var(--verdim);
-    margin: 10px;
     padding-left: 10%;
     font-size: xx-large;
+    font-family: Bungee, Calibri, Arial;
 }
 input, label, textarea {
     display: block;
@@ -395,10 +394,11 @@ label {
     font-family: Bungee, Calibri, Arial;
     font-size: 15px;
     color: var(--verdim);
+    display: flex;
+    justify-content: center;
 }
 .full-box {
     flex: 1 1 100%;
-    position: relative;
 }
 .half-box {
     flex: 1 1 45%;
@@ -410,15 +410,14 @@ label {
 input, textarea {
     border-bottom: 2px solid var(--verdim);
     padding: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 input:focus, textarea:focus {
     border-color: var(--verdim);
 }
 input[type="submit"] {
-    background-color: var(--escuro);
+    background-color: var(--cinza);
     color: var(--verdim);
-    border: none;
     border-radius: 25px;
     height: 50px;
     cursor: pointer;
@@ -434,7 +433,7 @@ input[type="submit"] {
 }
 input {
     border-radius: 20px;
-    border: var(--verdim) solid 1px;
+    border: var(--verdim) solid 2px;
 }
 
 /*address*/
@@ -445,8 +444,24 @@ address {
 address a{
     font-size: 16px;
 }
-
-
+.sair p {
+    margin-left: 30%;
+    margin-top: 5px;
+}
+/*perfil*/
+.perfil {
+    border: red solid 1px;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+}
+.img1 {
+    border: solid red  1px;
+}
+.alinhamento{
+    display: flex;
+    justify-content:left;
+}
 
 @media screen and (max-width: 1020px) {
    
