@@ -20,7 +20,19 @@ html{
 body{
     background-color:  var(--escuro);
 }
-
+h1 {
+    color : var(--verdim);
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    margin: 15px;
+    font-family: Bungee, Calibri, Arial;
+    font-size: x-large;
+}
+.sair p {
+    margin-left: 30%;
+    margin-top: 5px;
+}
 #Principal {
     background-color: var(--cinza-claro); 
     padding: 20px;
@@ -36,7 +48,7 @@ body{
 header {
     background-color: var(--escuro);
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     flex-direction: row;
     align-items: center;
 }
@@ -322,6 +334,10 @@ main {
 main > article > h2{ 
     text-transform: uppercase;
     color: var(--verdim);
+    font-family: Bungee, Calibri, Arial;
+    display: flex;
+    justify-content: center;
+    font-size: x-large;
 }
 
 /*ASIDE*/
@@ -383,7 +399,6 @@ article p {
 /*address*/
 address {
     font-size: 16px;
-    margin-right: 20%;
 }
 
 address a{
