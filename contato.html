@@ -5,137 +5,110 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HeyGeek</title>
-    <link rel="stylesheet" href="contato.css">
+    <link rel="stylesheet" href="sobre.css">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
-<body> 
+<body>
+    <header> 
+            
+        <img id="logo" src="Img/LOGO01.svg" alt="#" title="#">
+        
+        <!--<div class="area-de-pesquisa">
+            <form class="pesquisa">
+
+                <input type="search" id="barra" placeholder="Pesquisar!">
+                <i class="fas fa-search"><button><img src="/HeyGeek/Img/sheroca32.png" alt=""></button></i>
+
+            </form>
+        </div>-->
+        <div class="cadastro">
+            <a>
+                <button><img src="Img/sw32.png" alt="#"></button>
+                <a href="contato.html"><p>CADASTRE-SE</p></a>
+            </a>
+            <a class="sair">
+                <a href="#" class="sair"><p>SAIR</p></a>
+            </a>
+        </div>
+
+    </header>
+    
+    <nav class="menu">
+        <div id="menu-contraido">
+            <input type="checkbox">
+            <span></span>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="">Contatos</a></li>
+                    <li><a href="">Reclamações</a></li>
+                </ul>
+        </div>
+    </nav>
+
     <div id="Principal">
         <main> 
 
-            <article class="contato"> 
-
-                <div id="main-container">
-                    
-                    <h1>VIRE UM GEEK AGORA!</h1>
-                    <form id="register-form" action="">
-                      <div class="full-box">
-                        <label for="email">E-mail</label>
-                        <input type="email" name="email" id="email" placeholder="Digite seu e-mail" data-min-length="2"
-                          data-email-validate>
-                      </div>
-                      <div class="half-box spacing">
-                        <label for="name">Nome Completo</label>
-                        <input type="text" name="name" id="name" placeholder="Digite seu nome" data-required data-min-length="3"
-                          data-max-length="16">
-                      </div>
-                      <div class="half-box">
-                        <label for="lastname">Sexo</label>
-                        <input type="text" name="lastname" id="lastname" placeholder="Masc/Femin" data-required
-                          data-only-letters>
-                      </div>
-                      <div class="half-box spacing">
-                        <label for="lastname">Senha</label>
-                        <input type="password" name="password" id="password" placeholder="Digite sua senha" data-password-validate
-                          data-required>
-                      </div>
-                      <div class="half-box">
-                        <label for="passconfirmation">Conf.Senha</label>
-                        <input type="password" name="passconfirmation" id="passwordconfirmation"
-                          placeholder="Digite novamente sua senha" data-equal="password">
-                      </div>
-                      <div class="half-box spacing">
-                        <label for="lastname">Cidade</label>
-                        <input type="text" name="city" id="city" placeholder="Digite nome da sua cidade" data-password-validate
-                          data-required>
-                      </div>
-                      <div class="half-box ">
-                        <label for="lastname">Estado</label>
-                        <input type="text" name="estado" id="estado" placeholder="Digite seu estado" data-required
-                          data-only-letters>
-                      </div>
-                      <div class="half-box spacing">
-                        <label for="lastname">CPF</label>
-                        <input type="text" name="cpf" id="cpf" placeholder="Digite seu CPF" data-password-validate
-                          data-required>
-                      </div>
-                      <div class="half-box spacing">
-                        <label for="lastname">CEP</label>
-                        <input type="text" name="cep" id="cep" placeholder="Digite seu CEP" data-required
-                          data-only-letters>
-                      </div>
-                      <div class="full-box">
-                        <input id="btn-submit" type="submit" value="Cadastrar-se">
-                        <input id="btn-submit" type="submit" value="Voltar">
-                      </div>                      
-                    </form>
-                  </div>
-                  <p class="error-validation template"></p>
-                  <script src="js/scripts.js"></script>
-            </article>
-
-        </main>
-        <main>
             <article class="#">
-                <div class="alinhamento">
-                    
-                    <div class="perfil">
-                        <img class="img1" src="Img/sw32.png" alt="Perfil">
-                        <img class="img2" src="Img/sw32.png" alt="Perfil">
-                    </div>
-                    <img src="Img/sw32.png" alt="Perfil">
-                </div>
-
+                <h1>Contatos</h1>
+                    <p>
+                        Funcionario 1: (16)99566-6233
+                    </p>  
+                </br>
+                    <p>
+                        Funcionario 2: (16)99500-6030
+                    </p>
+                </br>
+                    <p>
+                        Funcionario 3: (16)99255-5999
+                    </p>  
+                </br>
+                <nav id="Rede-Social">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <img src="Img/WhatsApp.png" alt="WhatsApp">
+                                <span>(16)99001-3364</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="Img/Facebook.png" alt="Facebook">
+                                <span>HeyGeek</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="Img/Instagram.png" alt="Instagram">
+                                <span>HeyGeek</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>         
             </article>
+
         </main>
     </div>
     
     <footer id="texto">
         
+        <img src="/Img/local.png" alt="localizacao"  id="local">
         
-            <img src="Img/local.png" alt="localizacao"  id="local">
-            <address>
-                Rua Vinewood Boulevard   <br>
-                Avenida Hollywood Boulevard  <br>
-                <a href="">0800 159 357 0</a><br>
-            </address>
-        
+        <address>
+            Rua Vinewood Boulevard   <br>
+            Avenida Hollywood Boulevard  <br>
+            <a href="">0800 159 357 0</a><br>
+        </address>
 
-            <img id="logo-r" src="Img/LOGO01.svg" alt="#" title="#">
+        <img id="logo-r" src="Img/LOGO01.svg" alt="#" title="#">
+           
 
-            <nav id="Rede-Social">
-                <ul>
-                    <li>
-                        <a href="#">
-                            <img src="Img/WhatsApp.png" alt="WhatsApp">
-                            <span>(16)99001-3364</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="Img/Facebook.png" alt="Facebook">
-                            <span>HeyGeek</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="Img/Instagram.png" alt="Instagram">
-                            <span>HeyGeek</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="Img/Twitch.png" alt="Patrocinador">
-                            <span>https://www.twitch.tv/leohraiz</span>
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-        
-        
+        <img src="img/" alt="" title="" id="">
+
     </footer>
     
 
